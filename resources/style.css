@@ -2,11 +2,6 @@ html {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
   color: white;
-  background-color: black;
-}
-
-body {
-  width: 960px;
 }
 
 header {
@@ -16,6 +11,13 @@ header {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   justify-content: flex-start;
+}
+
+header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 960px;
 }
 
 header img {
@@ -28,6 +30,7 @@ header img {
 
 .container {
   max-width: 960px;
+  margin: 0 auto;
 }
 
 .banner {
@@ -59,15 +62,27 @@ header img {
   margin-bottom: 2rem;
 }
 
-.nav {
+nav {
   background-color: firebrick;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.nav span {
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+nav span {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.tablet{
+  display: none;
 }
 
 .block {
@@ -78,7 +93,7 @@ header img {
 .products {
   display: flex;
   background-color: white;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .item {
@@ -112,7 +127,7 @@ header img {
 .location-hours {
   display: flex;
   background-color: white;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .info {
@@ -134,4 +149,38 @@ footer {
   width: 100%;
   align-content: center;
   justify-content: flex-start;
+  position: absolute;
+}
+
+footer .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .banner .overlay p {
+    font-size: 1rem;
+  }
+  .banner .overlay h1 {
+    font-size: 2rem;
+  }
+  .nav .container{
+    visibility: hidden;
+  }
+
+  .nav .container .tablet {
+    display: block;
+  }
+
+.products {
+
+}
+
+  .item {
+    width: 47%;
+  }
 }
