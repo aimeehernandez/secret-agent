@@ -81,7 +81,7 @@ nav span {
   display: inline-block;
 }
 
-.tablet{
+.tablet {
   display: none;
 }
 
@@ -149,7 +149,7 @@ footer {
   width: 100%;
   align-content: center;
   justify-content: flex-start;
-  position: absolute;
+  position: fixed;
 }
 
 footer .container {
@@ -168,19 +168,24 @@ footer .container {
   .banner .overlay h1 {
     font-size: 2rem;
   }
-  .nav .container{
-    visibility: hidden;
-  }
 
-  .nav .container .tablet {
+  .tablet {
     display: block;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
-.products {
-
-}
+  nav div {
+    display: none;
+  }
 
   .item {
     width: 47%;
-  }
+}
+
+  div.item.glasses{
+    display: none;
+    visibility: hidden;
+}
 }
