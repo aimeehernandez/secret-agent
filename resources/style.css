@@ -150,6 +150,8 @@ footer {
   align-content: center;
   justify-content: flex-start;
   position: fixed;
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
 
 footer .container {
@@ -188,4 +190,69 @@ footer .container {
     display: none;
     visibility: hidden;
 }
+}
+
+@media only screen and (max-width: 470px) {
+  header .container {
+    justify-content: center;
+  }
+
+  header span {
+    display: none;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .overlay {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .banner .overlay p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .banner .overlay h1 {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .tablet {
+    display: block;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  nav div {
+    display: none;
+  }
+
+  .item, .info {
+    width: 90%;
+}
+
+  div.item.glasses{
+    display: none;
+    visibility: hidden;
+}
+
+  div.item.watch{
+    display: none;
+    visibility: hidden;
+}
+
+.products, .location-hours {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .container {
+  justify-content: center;
+}
+
 }
